@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
-
+  <div class="page-main">
     <header class="page-header">
+      <div class="page-header__container">
       <a class="page-header__logo logo">
-        <img src="img/logo-mobile.svg" alt="Функциональное питание для котов" class="page-header__logo-image" width="50" height="65">
-        <img src="img/logo-mobile-header.svg" alt="Cat energy" class="page-header__logo-txt" width="110" height="65">
+        <img src="/source/img/logo-mobile.svg" alt="Функциональное питание для котов" class="page-header__logo-image" width="191" height="39">
       </a>
 
     <nav class="main-nav">
@@ -17,26 +19,27 @@
       <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Каталог продукции</a>
+          <a href="#" class="site-list__link">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Подбор программы</a>
+          <a href="#" class="site-list__link">Подбор программы</a>
         </li>
       </ul>
       </div>
     </nav>
+      </div>
     </header>
 
-  <main class="page-main">
+  <main class="main-content">
     <section class="banner">
       <h1 class="visually-hidden">Функциональное питание для котов</h1>
       <header class="banner__header">
       <div class="banner__content">
         <p class="banner__intro">Функциональное питание для котов</p>
-        <p class="babber-__slogan">Занялся собой? Займись котом!</p>
+        <p class="banner__slogan">Занялся собой? Займись котом!</p>
       </div>
         <div class="banner__header button">
           <div class="button__banner">
@@ -48,44 +51,50 @@
 
     <section class="objective">
       <h2 class="visually-hidden">Преображение кота</h2>
+      <article class="objective__wrapper">
       <div class="objective__list">
         <div class="objective__item objective__item--slim">
           <h3 class="objective__title">Похудение</h3>
           <p class="objective__txt">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         </div>
-      </div>
       <div class="objective__list catalog-link">
         <div class="">
-          <a class="catalog-link__slim" href="#">Каталог Slim</a>
+          <a class="catalog-link" href="#">Каталог Slim</a>
         </div>
       </div>
+      </div>
+      </article>
 
+      <article class="objective__wrapper">
       <div class="objective__list">
         <div class="objective__item objective__item--pro">
           <h3 class="objective__title">Набор массы</h3>
           <p class="objective__txt">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         </div>
-      </div>
       <div class="objective__list catalog-link">
         <div>
-          <a class="catalog-link__pro" href="#">Каталог Pro</a>
+          <a class="catalog-link" href="#">Каталог Pro</a>
         </div>
       </div>
+      </div>
+      </article>
     </section>
 
     <section class="how-works">
-      <h2 class="how-works__title">Как это работает</h2>
-      <ul class="how-works__list">
-        <li class="how-works__item how-works__item--green">Функциональное питание содержит только полезные питательные вещества.</li>
-        <li class="how-works__item how-works__item--fast">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-        <li class="how-works__item how-works__item-cheap">Замените один-два приема обычной еды на наше функциональное питание.</li>
-        <li class="how-works__item how-works__item-result">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-      </ul>
+      <div class="how-works__wrapper">
+        <h2 class="how-works__title">Как это работает</h2>
+          <ul class="how-works__list">
+            <li class="how-works__item how-works__item--green"><p class="how-works__txt">Функциональное питание содержит только полезные питательные вещества.</p></li>
+            <li class="how-works__item how-works__item--fast"><p class="how-works__txt">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p></li>
+            <li class="how-works__item how-works__item--cheap"><p class="how-works__txt">Замените один-два приема обычной еды на наше функциональное питание.</p></li>
+            <li class="how-works__item how-works__item--result"><p class="how-works__txt">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p></li>
+          </ul>
+      </div>
     </section>
 
     <article class="example">
-      <h2 class="example-title">Живой пример</h2>
       <div class="example__wrapper">
+      <h2 class="example-title">Живой пример</h2>
         <p class="example__txt">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example__list example__item--loss">
             <p class="example__item example__weight">5 кг</p>
@@ -104,7 +113,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
     <a class="page-footer__logo logo">
-      <img src="img/logo-mobile-header.svg" alt="Cat energy" class="page-footer__logo-txt" width="110" height="65">
+      <img src="/source/img/logo-footer.svg" alt="Cat energy" class="page-footer__logo-txt" width="110" height="65">
     </a>
 
     <div class="page-footer__social social">
@@ -126,5 +135,6 @@
     </div>
     </div>
   </footer>
+  </div>
 </body>
 </html>
