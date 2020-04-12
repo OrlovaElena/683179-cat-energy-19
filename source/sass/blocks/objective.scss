@@ -1,0 +1,63 @@
+// .objective {
+// }
+
+.objective__wrapper {
+  background-color: #f2f2f2;
+  max-width: 280px;
+  max-height: 266px;
+  margin: auto;
+}
+
+.objective__list {
+  margin: auto;
+  max-width: 223px;
+}
+
+.objective__title {
+  color: #111111;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  left: 50px;
+}
+
+.objective__txt {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 200;
+  color: #444444;
+}
+
+.catalog-link {
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.objective__item--slim::before {
+  content: " ";
+  position: absolute;
+  background-image: url("/source/img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  // background-size: 50px;
+  display: inline-block;
+  width: 35px;
+  height: 49px;
+}
+
+.objective__item--pro::before {
+  content: " ";
+  position: absolute;
+  background-image: url("/source/img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  // background-size: 50px;
+  display: inline-block;
+  width: 67px;
+  height: 28px;
+}

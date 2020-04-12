@@ -1,0 +1,39 @@
+.page-footer__wrapper {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  margin: auto;
+}
+
+.social__item {
+  list-style: none;
+}
+
+.social__link,
+.copyright__link {
+  text-decoration: none;
+  color: #444444;
+}
+
+// .page-footer__copyright {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.copyright__link {
+  display: flex;
+}
+
+.copyright__link::after {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  // background-size: cover;
+  background: url("/source/img/htmlacademy.svg") no-repeat;
+  fill: #444444;
+}
