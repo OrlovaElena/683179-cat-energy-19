@@ -1,0 +1,76 @@
+.banner__content {
+  background: url("/source/img/index-can-mobile@1x.png") no-repeat 100% bottom,
+    url("/source/img/index-background-mobile@1x.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 480px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 25px;
+  position: relative;
+}
+
+.banner__intro {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  margin: 0 0 19px 0;
+}
+
+.banner__slogan {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .banner__content {
+    height: 874px;
+    background-image: url("/source/img/index-can-tablet@1x.jpg");
+    background-position: center bottom;
+    background-color: #ffffff;
+    color: #111111;
+    text-align: left;
+    padding-left: 91px;
+  }
+
+  .banner__intro {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0 0 33px 0;
+    width: 420px;
+  }
+
+  .banner__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    position: absolute;
+    top: 10%;
+    left: 490px;
+  }
+
+  .banner__content {
+    background-image: url("/source/img/index-can-desktop@1x.png");
+    background-position: center right 16%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 499px;
+  }
+
+  .banner__intro {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0 0 84px 0;
+    width: 414px;
+  }
+}

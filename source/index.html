@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
   </head>
 <body>
   <div class="page-main">
@@ -11,6 +12,8 @@
       <div class="page-header__container">
       <a class="page-header__logo logo">
         <img src="/source/img/logo-mobile.svg" alt="Функциональное питание для котов" class="page-header__logo-image" width="191" height="39">
+        <img src="/source/img/logo-tablet.svg" alt="Функциональное питание для котов" class="page-header__logo-image--tablet" width="174" height="49">
+        <img src="/source/img/logo-desktop.svg" alt="Функциональное питание для котов" class="page-header__logo-image--desktop" width="203" height="60">
       </a>
 
     <nav class="main-nav">
@@ -34,18 +37,14 @@
 
   <main class="main-content">
     <section class="banner">
-      <h1 class="visually-hidden">Функциональное питание для котов</h1>
-      <header class="banner__header">
-      <div class="banner__content">
-        <p class="banner__intro">Функциональное питание для котов</p>
-        <p class="banner__slogan">Занялся собой? Займись котом!</p>
-      </div>
-        <div class="banner__header button">
-          <div class="button__banner">
-            <a class ="button__select" href="#">Подобрать программу</a>
-          </div>
+      <div class="container__banner">
+        <h1 class="visually-hidden">Функциональное питание для котов</h1>
+        <div class="banner__content">
+          <p class="banner__intro">Функциональное питание для котов</p>
+          <p class="banner__slogan">Занялся собой? Займись котом!</p>
+          <a class ="button__select button" href="#">Подобрать программу</a>
         </div>
-      </header>
+      </div>
     </section>
 
     <section class="objective">

@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "browserslist": "^4.11.1",
-    "caniuse-lite": "^1.0.30001040"
+    "caniuse-lite": "^1.0.30001040",
+    "normalize.css": "^8.0.1"
   }
 }

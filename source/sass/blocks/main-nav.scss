@@ -1,7 +1,48 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-nav__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .site-list__link {
   text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+    padding-top: 9px;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav__toogle {
+    display: none;
+  }
+
+  .site-list {
+    width: 438px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 477px;
+    justify-content: space-around;
+  }
 }

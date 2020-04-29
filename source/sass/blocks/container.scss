@@ -1,0 +1,33 @@
+.container {
+  width: 280px;
+  margin: auto;
+}
+
+.container__banner {
+  width: 320px;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 708px;
+    margin: auto;
+  }
+
+  .container__banner {
+    width: 708px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1220px;
+    margin: auto;
+  }
+
+  .container__banner {
+    width: 1220px;
+    margin: auto;
+  }
+}

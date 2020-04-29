@@ -37,3 +37,21 @@
   background: url("/source/img/htmlacademy.svg") no-repeat;
   fill: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    align-self: center;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}

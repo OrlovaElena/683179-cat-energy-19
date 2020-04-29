@@ -1,11 +1,16 @@
-// .objective {
-// }
+.objective {
+  // border: 1px solid red;
+}
 
 .objective__wrapper {
+  // border: 1px solid red;
   background-color: #f2f2f2;
-  max-width: 280px;
-  max-height: 266px;
+  width: 280px;
+  height: 266px;
   margin: auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .objective__list {
@@ -20,7 +25,7 @@
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  left: 50px;
+  left: 70px;
 }
 
 .objective__txt {
@@ -60,4 +65,142 @@
   display: inline-block;
   width: 67px;
   height: 28px;
+  margin-left: -7px;
+}
+
+@media (min-width: $tablet-width) {
+  .objective__wrapper {
+    width: 708px;
+    height: 372px;
+    padding-left: 52px;
+    padding-top: 81px;
+    padding-right: 62px;
+    padding-bottom: 62px;
+  }
+
+  .objective__list {
+    max-width: 628px;
+    margin: 0;
+    position: relative;
+  }
+
+  .objective__title {
+    font-size: 36px;
+    left: 0;
+  }
+
+  .objective__txt {
+    max-width: 371px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .catalog-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .objective__item--slim::before {
+    display: none;
+  }
+
+  .objective__item--pro::before {
+    display: none;
+  }
+
+  .objective__item--slim::after {
+    content: " ";
+    position: absolute;
+    background: url("/source/img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 141px;
+    height: 194px;
+    // background-size: 50px;
+    right: -20px;
+    bottom: 30px;
+  }
+
+  .objective__item--pro::after {
+    content: " ";
+    position: absolute;
+    background-image: url("/source/img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    // background-size: 50px;
+    display: inline-block;
+    width: 268px;
+    height: 113px;
+    right: -30px;
+    bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .objective {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .objective__wrapper {
+    margin-right: 50px;
+    height: 372px;
+    padding-left: 52px;
+    padding-top: 41px;
+    padding-right: 56px;
+    padding-bottom: 62px;
+  }
+
+  .objective__item--pro::after {
+    display: none;
+  }
+
+  .objective__item--slim::after {
+    display: none;
+  }
+
+  .objective__title {
+    font-size: 36px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .objective__txt {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .catalog-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .objective__item--slim::before {
+    content: " ";
+    position: absolute;
+    background-image: url("/source/img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    // background-size: 50px;
+    display: inline-block;
+    width: 71px;
+    height: 97px;
+    background-color: transparent;
+    top: -40px;
+    left: 10px;
+  }
+
+  .objective__item--pro::before {
+    content: " ";
+    position: absolute;
+    background-image: url("/source/img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    // background-size: 50px;
+    display: inline-block;
+    width: 134px;
+    height: 57px;
+    background-color: transparent;
+    margin-left: -12px;
+  }
 }
